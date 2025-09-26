@@ -1,2 +1,157 @@
-holangvgnjhvkj
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi primera página en HTML</title>
+</head>
+<body>
+
+    <!-- Header con título principal -->
+    <header>
+        <h1>Bienvenidos a mi primera página en HTML</h1>
+    </header>
+
+    <!-- Explicación sobre HTML -->
+    <section>
+        <p>
+            HTML es el lenguaje principal para crear páginas web. 
+            Permite estructurar el contenido con textos, imágenes y enlaces, 
+            facilitando la visualización en navegadores.
+        </p>
+    </section>
+
+    <!-- Navegación interna -->
+    <nav>
+        <ul>
+            <li><a href="#formatos">Formatos de texto</a></li>
+            <li><a href="#listas">Listas en HTML</a></li>
+            <li><a href="#tablas">Tablas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de formatos de texto -->
+    <section id="formatos">
+        <h2>Ejemplos de formato de texto</h2>
+        <p><strong>Texto en negrita</strong></p>
+        <p><em>Texto en cursiva</em></p>
+        <p><u>Texto subrayado</u></p>
+        <p>Texto con subíndice H<sub>2</sub>O y superíndice E = mc<sup>2</sup></p>
+        <p>Una cita corta: <q>El conocimiento es poder.</q></p>
+        <blockquote>
+            Esto es una cita en bloque, que normalmente se usa para citar párrafos largos o importantes.
+        </blockquote>
+    </section>
+
+    <!-- Sección de listas -->
+    <section id="listas">
+        <h2>Listas en HTML</h2>
+        <h3>Mis 3 asignaturas favoritas (ordenada):</h3>
+        <ol>
+            <li>Matemáticas</li>
+            <li>Historia</li>
+            <li>Informática</li>
+        </ol>
+
+        <h3>Mis 3 aficiones o hobbies (desordenada):</h3>
+        <ul>
+            <li>Leer</li>
+            <li>Jugar videojuegos</li>
+            <li>Escuchar música</li>
+        </ul>
+
+        <h3>Lista de definición:</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado para crear páginas web.</dd>
+
+            <dt>CSS</dt>
+            <dd>Lenguaje para diseñar y dar estilo a las páginas web.</dd>
+        </dl>
+    </section>
+
+    <!-- Enlaces -->
+    <section>
+        <h2>Enlaces</h2>
+        <p>
+            <a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">Visita W3Schools</a>
+        </p>
+        <p>
+            <a href="#final">Ir al final de la página</a>
+        </p>
+    </section>
+
+    <!-- Imágenes -->
+    <section>
+        <h2>Imágenes</h2>
+        <p>Imagen desde internet:</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/120px-React-icon.svg.png" alt="Logo React" width="120" />
+        
+        <p>Imagen local (coloca la imagen llamada "local-image.jpg" en la misma carpeta):</p>
+        <img src="local-image.jpg" alt="Imagen local" width="200" />
+    </section>
+
+    <!-- Tabla -->
+    <section id="tablas">
+        <h2>Tabla - Mini Horario</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <caption>Horario semanal</caption>
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 10:00</td>
+                    <td>Matemáticas</td>
+                    <td>Historia</td>
+                </tr>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Informática</td>
+                    <td>Educación Física</td>
+                </tr>
+                <tr>
+                    <td>11:00 - 12:00</td>
+                    <td>Inglés</td>
+                    <td>Arte</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulario sencillo -->
+    <section>
+        <h2>Formulario de contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label><br />
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required /><br /><br />
+            
+            <label for="email">Correo electrónico:</label><br />
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required /><br /><br />
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Audio -->
+    <section>
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+
+    <!-- Footer -->
+    <footer id="final">
+        <p>Creado por Tu Nombre - 24 de septiembre de 2025</p>
+    </footer>
+
+</body>
+</html>
+
 
